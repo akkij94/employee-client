@@ -10,7 +10,7 @@ WORKDIR /ng-app
 COPY . .
 
 RUN npm install -g @angular/cli
-
+RUN npm update
 RUN npm run ng build
 
 FROM nginx:alpine

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'DOCKER AND KUBERNETES(K8S) PATHASHALA';
+  title = 'Angular 8 + Spring Boot 2 CRUD Tutorial';
 }

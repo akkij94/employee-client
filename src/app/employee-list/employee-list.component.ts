@@ -1,7 +1,7 @@
-import { EmployeeDetailsComponent } from '../employee-details/employee-details.component';
+import { EmployeeDetailsComponent } from './../employee-details/employee-details.component';
 import { Observable } from "rxjs";
-import { EmployeeService } from "../employee.service";
-import { Employee } from "../employee";
+import { EmployeeService } from "./../employee.service";
+import { Employee } from "./../employee";
 import { Component, OnInit } from "@angular/core";
 import { Router } from '@angular/router';
 
@@ -36,5 +36,9 @@ export class EmployeeListComponent implements OnInit {
 
   employeeDetails(id: number){
     this.router.navigate(['details', id]);
+  }
+
+  updateEmployee(id: number){
+    this.router.navigate(['update', id]);
   }
 }
